@@ -60,122 +60,160 @@
         <h1 class="text-4xl md:text-6xl font-bold text-primary mb-4 tracking-tight">Automatiza el crecimiento <br>de tu Empresa
         </h1>
         <p class="text-primary/60 text-lg max-w-2xl mx-auto">Elige el plan que mejor se adapte a tu crecimiento. </p>
-        <div class="mt-8 inline-flex bg-white p-1.5 rounded-full shadow-lg border border-primary/5">
-            <button
-                class="px-8 py-2.5 rounded-full bg-primary text-white text-sm font-bold shadow-sm transition-all">Mensual</button>
-            <button
-                class="px-8 py-2.5 rounded-full text-primary/60 text-sm font-bold hover:text-primary transition-all">Anual
-                (-20%)</button>
-        </div>
     </div>
 </section>
 
         <!-- Planes -->
 <section class="px-6 pb-20 pt-4 w-full max-w-7xl mx-auto">
+    
+    <div class="flex justify-center mb-12">
+        <div class="inline-flex bg-white p-1.5 rounded-full shadow-lg border border-primary/5 transition-all">
+            <button id="btnMensual" class="px-8 py-2.5 rounded-full bg-primary text-white text-sm font-bold shadow-sm transition-all duration-300">
+                Mensual
+            </button>
+            <button id="btnAnual" class="px-8 py-2.5 rounded-full text-primary/60 text-sm font-bold hover:text-primary transition-all duration-300">
+                Anual (-20%)
+            </button>
+        </div>
+    </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-        <div
-            class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
+        
+        <div class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
             <div class="mb-6">
-                <h3 class="text-2xl font-bold text-primary">Bronce</h3>
-                <p class="text-sm text-primary/50 mt-2 font-medium">Para emprendedores</p>
+                <h3 class="text-2xl font-bold text-primary">Essential</h3>
+                <p class="text-sm text-primary/50 mt-2 font-medium">Ideal para arrancar con fuerza</p>
             </div>
-            <div class="mb-8 flex items-end gap-1">
-                <span class="text-5xl font-bold text-primary">$150</span>
-                <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+            
+            <div class="min-h-[100px]"> 
+                <div class="price-monthly flex items-end gap-1 mb-8">
+                    <span class="text-5xl font-bold text-primary">$150</span>
+                    <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+                </div>
+                <div class="price-yearly flex flex-col mb-8 hidden animate-fade-in-up">
+                    <span class="text-base text-primary/40 line-through font-bold mb-2">$1,800</span>
+                    <div class="flex items-end gap-1">
+                        <span class="text-5xl font-bold text-primary">$1,440</span>
+                        <span class="text-base text-primary/50 mb-1.5 font-medium">/año</span>
+                    </div>
+                </div>
             </div>
+
             <ul class="space-y-4 mb-10 flex-1">
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Automatización Básica</span>
+                    <span><strong>Workflows:</strong> Automatiza tareas repetitivas</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>5 Proyectos Activos</span>
+                    <span><strong>Social Sync:</strong> Conecta tus redes sociales</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Soporte por Email</span>
+                    <span><strong>Leads:</strong> Contactos y usuarios ilimitados</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span><strong>Sales Funnels:</strong> Convierte visitas en clientes</span>
                 </li>
             </ul>
-            <button
-                class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
-                Elegir Bronce
+            <button class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
+                Get Essential
             </button>
         </div>
 
-        <div
-            class="bg-white rounded-[30px] p-8 shadow-glow-active border-2 border-primary relative flex flex-col transform md:scale-105 z-10">
-            <div
-                class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wider">
-                Más Popular
+        <div class="bg-white rounded-[30px] p-8 shadow-glow-active border-2 border-primary relative flex flex-col transform md:scale-105 z-10">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wider">
+                El más elegido
             </div>
             <div class="mb-6 mt-2">
-                <h3 class="text-2xl font-bold text-primary">Plata</h3>
-                <p class="text-sm text-primary/50 mt-2 font-medium">Equipos en crecimiento</p>
+                <h3 class="text-2xl font-bold text-primary">Professional</h3>
+                <p class="text-sm text-primary/50 mt-2 font-medium">Escala tu negocio al siguiente nivel</p>
             </div>
-            <div class="mb-8 flex items-end gap-1">
-                <span class="text-5xl font-bold text-primary">$250</span>
-                <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+            
+            <div class="min-h-[100px]"> 
+                <div class="price-monthly flex items-end gap-1 mb-8">
+                    <span class="text-5xl font-bold text-primary">$250</span>
+                    <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+                </div>
+                <div class="price-yearly flex flex-col mb-8 hidden animate-fade-in-up">
+                     <span class="text-base text-primary/40 line-through font-bold mb-2">$3,000</span>
+                    <div class="flex items-end gap-1">
+                        <span class="text-5xl font-bold text-primary">$2,400</span>
+                        <span class="text-base text-primary/50 mb-1.5 font-medium">/año</span>
+                    </div>
+                </div>
             </div>
+
             <ul class="space-y-4 mb-10 flex-1">
                 <li class="flex items-start gap-3 text-sm text-primary font-medium">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Todo lo de Bronce</span>
+                    <span>Todo lo incluido en <strong>Essential</strong></span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Flujos de Trabajo Avanzados</span>
+                    <span><strong>WhatsApp API:</strong> Integra tu principal canal de ventas</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Proyectos Ilimitados</span>
+                    <span><strong>AI Assistant:</strong> Agente IA 24/7 para tus leads</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Soporte Prioritario</span>
+                    <span><strong>Advanced Marketing:</strong> Email & Workflows Pro</span>
                 </li>
             </ul>
-            <button
-                class="w-full py-4 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-primary-light transition-all active:scale-95">
-                Comenzar Ahora
+            <button class="w-full py-4 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-primary-light transition-all active:scale-95">
+                Go Professional
             </button>
         </div>
 
-        <div
-            class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative hover:-translate-y-2 transition-transform duration-300">
+        <div class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative hover:-translate-y-2 transition-transform duration-300">
             <div class="mb-6">
-                <h3 class="text-2xl font-bold text-primary">Oro</h3>
-                <p class="text-sm text-primary/50 mt-2 font-medium">Agencias de gran escala</p>
+                <h3 class="text-2xl font-bold text-primary">Enterprise</h3>
+                <p class="text-sm text-primary/50 mt-2 font-medium">Poder ilimitado para agencias</p>
             </div>
-            <div class="mb-8 flex items-end gap-1">
-                <span class="text-5xl font-bold text-primary">$450</span>
-                <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+            
+            <div class="min-h-[100px]"> 
+                <div class="price-monthly flex items-end gap-1 mb-8">
+                    <span class="text-5xl font-bold text-primary">$450</span>
+                    <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+                </div>
+                <div class="price-yearly flex flex-col mb-8 hidden animate-fade-in-up">
+                     <span class="text-base text-primary/40 line-through font-bold mb-2">$5,400</span>
+                    <div class="flex items-end gap-1">
+                        <span class="text-5xl font-bold text-primary">$4,320</span>
+                        <span class="text-base text-primary/50 mb-1.5 font-medium">/año</span>
+                    </div>
+                </div>
             </div>
+
             <ul class="space-y-4 mb-10 flex-1">
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Todo lo de Plata</span>
+                    <span>Todo lo incluido en <strong>Professional</strong></span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Dashboard Marca Blanca</span>
+                    <span><strong>Unlimited Power:</strong> Embudos y seguimiento sin límites</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Acceso Total a la API</span>
+                    <span><strong>Web Builder:</strong> Constructor y alojamiento de sitios web</span>
                 </li>
                 <li class="flex items-start gap-3 text-sm text-primary/80">
                     <span class="material-icons-round text-green-500 text-lg">check_circle</span>
-                    <span>Asesor Dedicado</span>
+                    <span><strong>API Ecosystem:</strong> Integración externa total</span>
                 </li>
             </ul>
-            <button
-                class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
-                Contactar Ventas
+            <button class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
+                Contact Enterprise
             </button>
         </div>
     </div>
 </section>
+
+
 
 <section class="py-20 px-6 bg-white relative">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
@@ -418,31 +456,41 @@
         
         <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
             <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
-                <span>¿Puedo cambiar de plan más adelante?</span>
+                <span>¿Es posible cambiar mi plan en el futuro?</span>
                 <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
             </summary>
             <div class="px-6 pb-6 text-primary/60 leading-relaxed">
-                ¡Por supuesto! Puedes subir o bajar de plan en cualquier momento desde tu panel de configuración. Los cambios se aplican de forma inmediata.
+                Totalmente. Puedes realizar un upgrade o downgrade de tu plan en cualquier momento desde tu panel de facturación. Si eliges un plan superior, la diferencia se prorrateará para que aproveches las nuevas funciones de inmediato.
             </div>
         </details>
 
         <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
             <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
-                <span>¿Ofrecen una prueba gratuita?</span>
+                <span>¿Cómo funciona el periodo de prueba?</span>
                 <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
             </summary>
             <div class="px-6 pb-6 text-primary/60 leading-relaxed">
-                Sí, ofrecemos una prueba gratuita de 7 días con acceso a todas las funciones principales para que puedas experimentar el poder de la automatización antes de comprometerte.
+                Te damos acceso total a nuestra tecnología durante 7 días sin costo. Durante este tiempo, podrás configurar tus primeros flujos y ver cómo la IA comienza a gestionar tus leads. No hay compromisos ocultos.
             </div>
         </details>
 
         <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
             <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
-                <span>¿Qué es un dashboard de marca blanca?</span>
+                <span>¿Recibiré ayuda para configurar mis automatizaciones?</span>
                 <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
             </summary>
             <div class="px-6 pb-6 text-primary/60 leading-relaxed">
-                La opción de marca blanca permite personalizar la plataforma con tu propio logo y colores, ideal para agencias que quieren ofrecer el software como un servicio propio a sus clientes.
+                ¡Sí! Contamos con tutoriales paso a paso y un equipo de soporte experto listo para guiarte. En los planes Professional y Enterprise, también ofrecemos sesiones de onboarding para asegurar que tu sistema esté optimizado desde el primer día.
+            </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+            <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
+                <span>¿Existen contratos forzosos o permanencia?</span>
+                <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-primary/60 leading-relaxed">
+                No creemos en las ataduras. Operamos bajo un modelo de suscripción mensual o anual que puedes cancelar cuando quieras sin penalizaciones. Tú eres dueño de tu cuenta y de tus datos en todo momento.
             </div>
         </details>
 
@@ -450,7 +498,6 @@
 </section>
 
 <style>
-    /* Oculta la flecha por defecto de la etiqueta summary en algunos navegadores */
     summary::-webkit-details-marker {
         display: none;
     }
@@ -530,6 +577,41 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btnMensual = document.getElementById('btnMensual');
+        const btnAnual = document.getElementById('btnAnual');
+        const pricesMonthly = document.querySelectorAll('.price-monthly');
+        const pricesYearly = document.querySelectorAll('.price-yearly');
+
+        // Clases de estilos para los botones activos e inactivos
+        const activeClass = 'px-8 py-2.5 rounded-full bg-primary text-white text-sm font-bold shadow-sm transition-all duration-300';
+        const inactiveClass = 'px-8 py-2.5 rounded-full text-primary/60 text-sm font-bold hover:text-primary transition-all duration-300';
+
+        btnMensual.addEventListener('click', () => {
+            // Cambiar estilos de los botones
+            btnMensual.className = activeClass;
+            btnAnual.className = inactiveClass;
+            
+            // Mostrar Mensual / Ocultar Anual
+            pricesMonthly.forEach(el => el.classList.remove('hidden'));
+            pricesYearly.forEach(el => el.classList.add('hidden'));
+        });
+
+        btnAnual.addEventListener('click', () => {
+            // Cambiar estilos de los botones
+            btnAnual.className = activeClass;
+            btnMensual.className = inactiveClass;
+            
+            // Mostrar Anual / Ocultar Mensual
+            pricesMonthly.forEach(el => el.classList.add('hidden'));
+            pricesYearly.forEach(el => el.classList.remove('hidden'));
+        });
+    });
+    </script>
+
 </body>
 
 </html>
