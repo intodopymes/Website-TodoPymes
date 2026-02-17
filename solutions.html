@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    <title>TodoPymes - Soluciones</title>
+
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="apple-touch-icon" href="img/icono.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="style/main-styles.css">
+</head>
+
+<body
+    class="font-display bg-background-light dark:bg-background-dark text-primary dark:text-white antialiased overflow-x-hidden transition-colors duration-300 min-h-screen flex flex-col">
+    
+    <header class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group">
+                <div class="h-12 w-auto flex items-center justify-center">
+                    <img src="img/icono.png" alt="TodoPymes Logo" class="h-full w-auto object-contain">
+                </div>
+                <span class="text-xl font-bold tracking-tight text-primary dark:text-white">TodoPymes</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
+                    href="home.html">Automatiza</a>
+                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
+                    href="solutions.html">Soluciones</a>
+                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
+                    href="resources.html">Recursos</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button class="md:hidden p-2 rounded-full hover:bg-primary/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-icons">menu</span>
+                </button>
+                
+                <a href="contact.html"
+                    class="hidden md:block px-6 py-2.5 bg-primary dark:bg-white text-white dark:text-primary text-sm font-bold rounded-full hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                    Empezar Ahora
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <main class="w-full mx-auto overflow-hidden">
+        
+<section class="relative px-6 pt-32 pb-10 text-center bg-grid">
+    <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-background-light pointer-events-none">
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto">
+        <span
+            class="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4 inline-block">Precios Simples</span>
+        <h1 class="text-4xl md:text-6xl font-bold text-primary mb-4 tracking-tight">Automatiza el crecimiento <br>de tu Empresa
+        </h1>
+        <p class="text-primary/60 text-lg max-w-2xl mx-auto">Elige el plan que mejor se adapte a tu crecimiento. </p>
+        <div class="mt-8 inline-flex bg-white p-1.5 rounded-full shadow-lg border border-primary/5">
+            <button
+                class="px-8 py-2.5 rounded-full bg-primary text-white text-sm font-bold shadow-sm transition-all">Mensual</button>
+            <button
+                class="px-8 py-2.5 rounded-full text-primary/60 text-sm font-bold hover:text-primary transition-all">Anual
+                (-20%)</button>
+        </div>
+    </div>
+</section>
+
+        <!-- Planes -->
+<section class="px-6 pb-20 pt-4 w-full max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div
+            class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative group hover:-translate-y-2 transition-transform duration-300">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-primary">Bronce</h3>
+                <p class="text-sm text-primary/50 mt-2 font-medium">Para emprendedores</p>
+            </div>
+            <div class="mb-8 flex items-end gap-1">
+                <span class="text-5xl font-bold text-primary">$150</span>
+                <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-1">
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Automatización Básica</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>5 Proyectos Activos</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Soporte por Email</span>
+                </li>
+            </ul>
+            <button
+                class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
+                Elegir Bronce
+            </button>
+        </div>
+
+        <div
+            class="bg-white rounded-[30px] p-8 shadow-glow-active border-2 border-primary relative flex flex-col transform md:scale-105 z-10">
+            <div
+                class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wider">
+                Más Popular
+            </div>
+            <div class="mb-6 mt-2">
+                <h3 class="text-2xl font-bold text-primary">Plata</h3>
+                <p class="text-sm text-primary/50 mt-2 font-medium">Equipos en crecimiento</p>
+            </div>
+            <div class="mb-8 flex items-end gap-1">
+                <span class="text-5xl font-bold text-primary">$250</span>
+                <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-1">
+                <li class="flex items-start gap-3 text-sm text-primary font-medium">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Todo lo de Bronce</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Flujos de Trabajo Avanzados</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Proyectos Ilimitados</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Soporte Prioritario</span>
+                </li>
+            </ul>
+            <button
+                class="w-full py-4 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-primary-light transition-all active:scale-95">
+                Comenzar Ahora
+            </button>
+        </div>
+
+        <div
+            class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative hover:-translate-y-2 transition-transform duration-300">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-primary">Oro</h3>
+                <p class="text-sm text-primary/50 mt-2 font-medium">Agencias de gran escala</p>
+            </div>
+            <div class="mb-8 flex items-end gap-1">
+                <span class="text-5xl font-bold text-primary">$450</span>
+                <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-1">
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Todo lo de Plata</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Dashboard Marca Blanca</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Acceso Total a la API</span>
+                </li>
+                <li class="flex items-start gap-3 text-sm text-primary/80">
+                    <span class="material-icons-round text-green-500 text-lg">check_circle</span>
+                    <span>Asesor Dedicado</span>
+                </li>
+            </ul>
+            <button
+                class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
+                Contactar Ventas
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 px-6 bg-white relative">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+        <div class="w-full md:w-1/2 relative order-2 md:order-1">
+            <div
+                class="bg-white border border-gray-200 shadow-2xl rounded-[30px] p-6 max-w-md mx-auto relative">
+                <div class="flex items-center justify-between border-b border-gray-100 pb-4 mb-4">
+                    <span class="material-icons-round text-primary/40">arrow_back</span>
+                    <span class="font-bold text-primary">Asistente IA Robin</span>
+                    <span class="material-icons-round text-primary/40">info</span>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-gray-100 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm text-gray-600">
+                        Hola Sara, soy Robin de TodoPymes. ¿Tienes disponibilidad para una reunión esta semana?
+                    </div>
+                    <div
+                        class="bg-blue-500 p-4 rounded-2xl rounded-tr-none max-w-[85%] text-sm text-white ml-auto">
+                        ¡Sí, me encantaría conversar!
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-2xl rounded-tl-none max-w-[85%] text-sm text-gray-600">
+                        ¡Genial! Confirmado para el miércoles 7 de julio a las 9:00 AM.
+                    </div>
+                    <div
+                        class="bg-blue-500 p-4 rounded-2xl rounded-tr-none max-w-[85%] text-sm text-white ml-auto">
+                        ¡Excelente, ahí estaré!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 space-y-8 order-1 md:order-2">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6">
+                <span class="material-icons-round">calendar_today</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-primary">Agendamiento Totalmente Automatizado</h2>
+            <p class="text-primary/60 text-lg">Agenda prospectos y leads automáticamente en tu calendario sin mover un solo dedo.</p>
+            <ul class="space-y-6 mt-4">
+                <li class="flex gap-4">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mt-2.5 shrink-0"></span>
+                    <div>
+                        <h4 class="font-bold text-primary text-lg">Conversaciones de Nutrición Automáticas</h4>
+                        <p class="text-sm text-primary/60 mt-1">Crea diálogos por chat con el objetivo de cerrar citas en tu calendario SIN intervención humana.</p>
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mt-2.5 shrink-0"></span>
+                    <div>
+                        <h4 class="font-bold text-primary text-lg">Inteligencia Artificial Integrada</h4>
+                        <p class="text-sm text-primary/60 mt-1">TodoPymes te permite aprovechar la IA y el Machine Learning para gestionar la conversación de forma inteligente.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-20 px-6 bg-background-light relative border-t border-primary/5">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+        <div class="w-full md:w-1/2 space-y-8">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6">
+                <span class="material-icons-round">lock</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-primary">Cierra más Ventas</h2>
+            <p class="text-primary/60 text-lg">Únete a nuestra próspera comunidad de expertos en marketing digital más exitosos y visionarios del planeta.</p>
+            <ul class="space-y-6 mt-4">
+                <li class="flex gap-4">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mt-2.5 shrink-0"></span>
+                    <div>
+                        <h4 class="font-bold text-primary text-lg">Gestiona tu flujo de trabajo y embudo</h4>
+                        <p class="text-sm text-primary/60 mt-1">Con nuestra función de Gestión de Embudos integrada, podrás mantener un seguimiento preciso de dónde se encuentran tus prospectos.</p>
+                    </div>
+                </li>
+                <li class="flex gap-4">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 mt-2.5 shrink-0"></span>
+                    <div>
+                        <h4 class="font-bold text-primary text-lg">Cobra pagos de clientes</h4>
+                        <p class="text-sm text-primary/60 mt-1">Nos integramos directamente con Stripe para que puedas cobrar en sitios web, embudos e incluso en las reservas de citas.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="bg-gray-100 rounded-[30px] p-8 mt-8 border border-gray-200">
+                <span class="material-icons-round text-4xl text-primary mb-4">format_quote</span>
+                <p class="text-primary text-lg font-medium mb-6">"Ha cambiado las reglas del juego para mí. Hemos construido todo nuestro negocio alrededor de TodoPymes. No volveríamos atrás jamás."</p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                        <span
+                            class="material-icons-round text-4xl text-white/50 w-full h-full flex items-center justify-center">person</span>
+                    </div>
+                    <div>
+                        <div class="font-bold text-primary">Christine Seale</div>
+                        <div class="text-sm text-primary/60">CEO de NerdLevel</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w-full md:w-1/2 relative">
+            <div class="relative">
+                <div
+                    class="absolute -top-10 -right-4 z-20 bg-blue-500 text-white px-6 py-3 rounded-xl shadow-lg font-medium animate-float-1">
+                    ¡Nueva Cita!
+                </div>
+                <div
+                    class="absolute top-20 -left-10 z-20 bg-blue-500 text-white px-6 py-3 rounded-xl shadow-lg font-medium animate-float-2">
+                    ¡Venta Cerrada!
+                </div>
+                <div
+                    class="bg-white rounded-[30px] shadow-2xl p-2 border border-primary/5 relative z-10 overflow-hidden">
+                    <div class="bg-gray-50 rounded-[24px] overflow-hidden">
+                        <div class="flex border-b border-gray-200">
+                            <div
+                                class="w-16 h-full border-r border-gray-200 p-4 flex flex-col items-center gap-4 bg-white min-h-[400px]">
+                                <div class="w-8 h-8 rounded bg-blue-100"></div>
+                                <div class="w-6 h-6 rounded bg-gray-100"></div>
+                                <div class="w-6 h-6 rounded bg-gray-100"></div>
+                                <div class="w-6 h-6 rounded bg-gray-100"></div>
+                            </div>
+                            <div class="flex-1 p-6">
+                                <div class="flex justify-between items-center mb-8">
+                                    <div class="h-8 w-40 bg-gray-200 rounded"></div>
+                                    <div class="h-8 w-24 bg-blue-500 rounded"></div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-4 mb-8">
+                                    <div class="h-24 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                                        <div class="text-gray-400 text-[10px] uppercase mb-2">Ingresos</div>
+                                        <div class="text-xl md:text-2xl font-bold text-primary">$37,000</div>
+                                    </div>
+                                    <div class="h-24 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                                        <div class="text-gray-400 text-[10px] uppercase mb-2">Ventas</div>
+                                        <div class="text-xl md:text-2xl font-bold text-primary">38</div>
+                                    </div>
+                                    <div class="h-24 bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                                        <div class="text-gray-400 text-[10px] uppercase mb-2">Conv.</div>
+                                        <div class="text-xl md:text-2xl font-bold text-green-500">24%</div>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div
+                                        class="h-12 bg-white rounded-lg border border-gray-100 w-full flex items-center px-4 gap-4">
+                                        <div class="w-8 h-8 rounded-full bg-gray-100"></div>
+                                        <div class="h-3 w-32 bg-gray-100 rounded"></div>
+                                        <div
+                                            class="ml-auto h-6 w-20 bg-green-100 text-green-700 text-[10px] flex items-center justify-center rounded font-bold">
+                                            Ganada</div>
+                                    </div>
+                                    <div
+                                        class="h-12 bg-white rounded-lg border border-gray-100 w-full flex items-center px-4 gap-4">
+                                        <div class="w-8 h-8 rounded-full bg-gray-100"></div>
+                                        <div class="h-3 w-32 bg-gray-100 rounded"></div>
+                                        <div
+                                            class="ml-auto h-6 w-20 bg-yellow-100 text-yellow-700 text-[10px] flex items-center justify-center rounded font-bold">
+                                            Pendiente</div>
+                                    </div>
+                                    <div
+                                        class="h-12 bg-white rounded-lg border border-gray-100 w-full flex items-center px-4 gap-4">
+                                        <div class="w-8 h-8 rounded-full bg-gray-100"></div>
+                                        <div class="h-3 w-32 bg-gray-100 rounded"></div>
+                                        <div
+                                            class="ml-auto h-6 w-20 bg-blue-100 text-blue-700 text-[10px] flex items-center justify-center rounded font-bold">
+                                            Nuevo</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section
+    class="mt-12 mx-4 md:mx-auto max-w-7xl rounded-[40px] bg-primary overflow-hidden relative text-white py-16 px-6">
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <div class="absolute top-10 -left-10 w-40 h-40 bg-white rounded-full blur-[80px]"></div>
+        <div class="absolute bottom-10 -right-10 w-40 h-40 bg-secondary rounded-full blur-[80px]"></div>
+    </div>
+    <div class="relative z-10 text-center mb-10 max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Núcleo de Sincronización Universal</h2>
+        <p class="text-white/70 text-base leading-relaxed">
+            Conecta todo tu ecosistema de herramientas. Los datos fluyen automáticamente hacia TodoPymes para una centralización total.
+        </p>
+    </div>
+    <div class="relative h-[400px] flex items-center justify-center max-w-4xl mx-auto">
+        <svg class="absolute inset-0 w-full h-full text-white/10 pointer-events-none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line stroke="currentColor" stroke-width="1" x1="20%" x2="50%" y1="20%" y2="50%"></line>
+            <line stroke="currentColor" stroke-width="1" x1="80%" x2="50%" y1="25%" y2="50%"></line>
+            <line stroke="currentColor" stroke-width="1" x1="15%" x2="50%" y1="70%" y2="50%"></line>
+            <line stroke="currentColor" stroke-width="1" x1="85%" x2="50%" y1="65%" y2="50%"></line>
+            <line stroke="currentColor" stroke-width="1" x1="50%" x2="50%" y1="15%" y2="50%"></line>
+            <line stroke="currentColor" stroke-width="1" x1="30%" x2="50%" y1="10%" y2="50%"></line>
+            <line stroke="currentColor" stroke-width="1" x1="70%" x2="50%" y1="90%" y2="50%"></line>
+        </svg>
+        <div
+            class="relative w-24 h-24 bg-white rounded-full flex items-center justify-center z-20 shadow-2xl animate-core-pulse">
+            <span class="material-icons-round text-4xl text-primary">auto_awesome</span>
+        </div>
+        <div
+            class="absolute top-[10%] left-[15%] w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 animate-float-1">
+            <span class="material-icons-round text-2xl text-yellow-400">mail</span>
+        </div>
+        <div
+            class="absolute top-[5%] left-[45%] w-12 h-12 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 animate-float-3">
+            <span class="material-icons-round text-xl text-blue-400">cloud</span>
+        </div>
+        <div
+            class="absolute top-[15%] right-[15%] w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 animate-float-2">
+            <span class="material-icons-round text-2xl text-purple-400">forum</span>
+        </div>
+        <div
+            class="absolute bottom-[20%] left-[10%] w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 animate-float-2">
+            <span class="material-icons-round text-2xl text-green-400">payments</span>
+        </div>
+        <div
+            class="absolute bottom-[25%] right-[10%] w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 animate-float-1">
+            <span class="material-icons-round text-2xl text-red-400">today</span>
+        </div>
+        <div
+            class="absolute top-[35%] left-[5%] w-10 h-10 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/20 animate-float-3">
+            <span class="material-icons-round text-lg text-orange-400">pie_chart</span>
+        </div>
+        <div
+            class="absolute top-[40%] right-[5%] w-10 h-10 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center border border-white/20 animate-float-3">
+            <span class="material-icons-round text-lg text-teal-400">share</span>
+        </div>
+    </div>
+    <div class="text-center mt-10">
+        <button
+            class="px-8 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-bold transition-all backdrop-blur-sm">
+            Ver las más de 50 integraciones
+        </button>
+    </div>
+</section>
+        
+<section class="mt-20 pb-32 px-6 max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold text-primary mb-10 text-center">Preguntas Frecuentes</h3>
+    <div class="space-y-4">
+        
+        <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+            <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
+                <span>¿Puedo cambiar de plan más adelante?</span>
+                <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-primary/60 leading-relaxed">
+                ¡Por supuesto! Puedes subir o bajar de plan en cualquier momento desde tu panel de configuración. Los cambios se aplican de forma inmediata.
+            </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+            <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
+                <span>¿Ofrecen una prueba gratuita?</span>
+                <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-primary/60 leading-relaxed">
+                Sí, ofrecemos una prueba gratuita de 7 días con acceso a todas las funciones principales para que puedas experimentar el poder de la automatización antes de comprometerte.
+            </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-primary/5 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+            <summary class="list-none p-6 cursor-pointer flex justify-between items-center text-primary font-bold text-lg">
+                <span>¿Qué es un dashboard de marca blanca?</span>
+                <span class="material-icons-round text-primary/40 group-open:rotate-180 transition-transform duration-300">expand_more</span>
+            </summary>
+            <div class="px-6 pb-6 text-primary/60 leading-relaxed">
+                La opción de marca blanca permite personalizar la plataforma con tu propio logo y colores, ideal para agencias que quieren ofrecer el software como un servicio propio a sus clientes.
+            </div>
+        </details>
+
+    </div>
+</section>
+
+<style>
+    /* Oculta la flecha por defecto de la etiqueta summary en algunos navegadores */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+</style>
+
+
+    </main>
+    <footer class="w-full relative bg-footer-bg text-white pt-20 pb-10 overflow-hidden mt-auto">
+        <div class="absolute inset-0 footer-lines opacity-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+                <div class="flex flex-col space-y-6">
+                    <div class="flex items-center">
+                        <div class="relative group">
+                            <img 
+                                src="img/logo-white.png" 
+                                alt="Logo TodoPymes" 
+                                class="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                            >
+                            <div class="absolute inset-0 bg-white/5 blur-xl rounded-full -z-10"></div>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed max-w-xs">
+                        Automatizando las Empresas de Latinoamérica con tecnología, recursos y alianzas estratégicas para
+                        un crecimiento sostenible.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="https://www.instagram.com/pymesuy/reels/">
+                            <i class="material-symbols-outlined text-[20px]">photo_camera</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="https://www.facebook.com/TodoPymesUY/">
+                            <i class="material-symbols-outlined text-[20px]">group</i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Plataforma</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="home.html">Automatiza</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="solutions.html">Soluciones</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Recursos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Recursos</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Alianzas Marketing</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Gestión Contable</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Academia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Soporte</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="contact.html">Contacto</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="contact.html">Agendar Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">© 2024 TodoPymes Inc. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-400 hover:text-white text-sm transition-colors" href="privacy.html">Privacidad</a>
+                    <a class="text-slate-400 hover:text-white text-sm transition-colors" href="terms.html">Términos y
+                        Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

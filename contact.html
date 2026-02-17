@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    <title>TodoPymes - Contacto</title>
+
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="apple-touch-icon" href="img/icono.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="style/main-styles.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300 antialiased min-h-screen relative overflow-x-hidden flex flex-col">
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute inset-0 bg-pattern opacity-60"></div>
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] transform translate-x-1/3 -translate-y-1/3">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] transform -translate-x-1/3 translate-y-1/3">
+        </div>
+    </div>
+    <header class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group">
+                <div class="h-12 w-auto flex items-center justify-center">
+                    <img src="img/logo-todopymes.png" alt="TodoPymes Logo" class="h-full w-auto object-contain">
+                </div>
+                <span class="text-xl font-bold tracking-tight text-primary dark:text-white">TodoPymes</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
+                    href="home.html">Automatiza</a>
+                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
+                    href="solutions.html">Soluciones</a>
+                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
+                    href="resources.html">Recursos</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button class="md:hidden p-2 rounded-full hover:bg-primary/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-icons">menu</span>
+                </button>
+                
+                <a href="contact.html"
+                    class="hidden md:block px-6 py-2.5 bg-primary dark:bg-white text-white dark:text-primary text-sm font-bold rounded-full hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                    Empezar Ahora
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="relative z-10 pt-32 pb-20 flex-grow max-w-7xl mx-auto w-full flex flex-col gap-12 lg:gap-16">
+        <div class="flex flex-col lg:flex-row gap-12 items-start">
+            <section class="w-full lg:w-[45%] space-y-10 lg:sticky lg:top-32">
+                <div class="space-y-6">
+                    <span
+                        class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:text-white text-sm font-bold tracking-wide uppercase">
+                        Onboarding
+                    </span>
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary dark:text-white leading-[1.1] tracking-tight">
+                        Estás a un paso de la <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">automatización
+                            total</span>
+                    </h1>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg">
+                        Simplifica tu flujo de trabajo, ahorra tiempo y optimiza tus recursos en tres sencillos pasos.
+                    </p>
+                </div>
+                <div class="space-y-8 relative pl-4">
+                    <div
+                        class="absolute left-[27px] top-4 bottom-8 w-0.5 bg-gradient-to-b from-primary/30 via-primary/20 to-transparent">
+                    </div>
+                    <div class="relative flex gap-6 items-start group">
+                        <div
+                            class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-white dark:bg-slate-800 border-4 border-background-light dark:border-background-dark shadow-lg flex items-center justify-center text-primary dark:text-white group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-icons-round text-2xl">edit_note</span>
+                        </div>
+                        <div class="pt-2">
+                            <h3
+                                class="text-xl font-bold text-primary dark:text-white mb-1 group-hover:text-blue-500 transition-colors">
+                                1. Completa el formulario</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">Cuéntanos sobre tu
+                                negocio para personalizar tu experiencia.</p>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-6 items-start group">
+                        <div
+                            class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-white dark:bg-slate-800 border-4 border-background-light dark:border-background-dark shadow-lg flex items-center justify-center text-primary dark:text-white group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-icons-round text-2xl">calendar_month</span>
+                        </div>
+                        <div class="pt-2">
+                            <h3
+                                class="text-xl font-bold text-primary dark:text-white mb-1 group-hover:text-blue-500 transition-colors">
+                                2. Agenda tu sesión estratégica</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">Selecciona el
+                                horario que mejor se adapte a tu agenda.</p>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-6 items-start group">
+                        <div
+                            class="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-primary text-white border-4 border-primary/20 shadow-lg shadow-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <span class="material-icons-round text-2xl animate-pulse-slow">rocket_launch</span>
+                        </div>
+                        <div class="pt-2">
+                            <h3
+                                class="text-xl font-bold text-primary dark:text-white mb-1 group-hover:text-blue-500 transition-colors">
+                                3. Empieza a escalar</h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-base leading-relaxed">Activa tus
+                                automatizaciones y observa los resultados.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full lg:w-[55%] relative">
+                <div
+                    class="absolute -inset-4 bg-gradient-to-br from-primary/10 to-transparent rounded-[3rem] blur-2xl -z-10">
+                </div>
+                <div
+                    class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl border border-slate-100 dark:border-slate-700 p-2 min-h-[600px] lg:min-h-[750px] flex flex-col transform transition-all hover:shadow-[0_20px_60px_-15px_rgba(0,52,88,0.15)]">
+                    <div
+                        class="px-6 py-4 border-b border-slate-100 dark:border-slate-700 flex items-center gap-2 bg-slate-50/50 dark:bg-slate-900/30 rounded-t-[1.8rem]">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <div
+                            class="mx-auto bg-white dark:bg-slate-800 px-4 py-1 rounded-md shadow-sm border border-slate-100 dark:border-slate-700 w-1/2 flex items-center justify-center gap-2 opacity-80">
+                            <span class="material-icons-round text-xs text-slate-400">lock</span>
+                            <span class="text-xs font-mono text-slate-400 truncate">secure.todopymes.com/form</span>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-1 rounded-b-[1.8rem] bg-slate-50 dark:bg-slate-900/50 m-0 border-t-0 flex flex-col items-center justify-center p-12 text-center group transition-colors hover:bg-primary/5 relative overflow-hidden">
+                        <div
+                            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiMwMDM0NTgiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] opacity-50">
+                        </div>
+                        <div
+                            class="w-24 h-24 bg-white dark:bg-slate-800 rounded-2xl flex items-center justify-center mb-8 shadow-sm border border-slate-200 dark:border-slate-700 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                            <span
+                                class="material-icons-round text-5xl text-slate-300 dark:text-slate-600 group-hover:text-primary transition-colors">code</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-slate-700 dark:text-slate-200 mb-4 relative z-10">
+                            INSERTA TU FORMULARIO DE GHL AQUÍ
+                        </h3>
+                        <p class="text-base text-slate-500 max-w-sm mx-auto relative z-10">
+                            Este espacio está reservado para el código incrustado de tu formulario de contacto,
+                            calendario o encuesta de GoHighLevel.
+                        </p>
+                        <div
+                            class="w-full max-w-md mt-12 space-y-4 opacity-40 pointer-events-none grayscale group-hover:grayscale-0 group-hover:opacity-70 transition-all duration-500 relative z-10">
+                            <div class="flex gap-4">
+                                <div
+                                    class="h-12 bg-white dark:bg-slate-800 rounded-lg w-1/2 shadow-sm border border-slate-200 dark:border-slate-700">
+                                </div>
+                                <div
+                                    class="h-12 bg-white dark:bg-slate-800 rounded-lg w-1/2 shadow-sm border border-slate-200 dark:border-slate-700">
+                                </div>
+                            </div>
+                            <div
+                                class="h-12 bg-white dark:bg-slate-800 rounded-lg w-full shadow-sm border border-slate-200 dark:border-slate-700">
+                            </div>
+                            <div
+                                class="h-32 bg-white dark:bg-slate-800 rounded-lg w-full shadow-sm border border-slate-200 dark:border-slate-700">
+                            </div>
+                            <div class="h-12 bg-primary rounded-lg w-full shadow-md"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="border-t border-slate-200 dark:border-slate-700/50 pt-10 pb-6">
+            <h4 class="text-sm uppercase tracking-wider font-bold text-slate-400 mb-8 px-2">Canales Directos</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a class="flex items-center gap-5 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 group"
+                    href="tel:+59899334764">
+                    <div
+                        class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-icons-round text-2xl">phone</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium mb-1">Llámanos</p>
+                        <p
+                            class="text-primary dark:text-white font-bold tracking-tight text-lg group-hover:text-primary-light dark:group-hover:text-blue-300 transition-colors">
+                            +598 99334764</p>
+                    </div>
+                </a>
+                <a class="flex items-center gap-5 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 group"
+                    href="mailto:info@todopymes.com">
+                    <div
+                        class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-icons-round text-2xl">mail</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium mb-1">Escríbenos</p>
+                        <p
+                            class="text-primary dark:text-white font-bold tracking-tight text-lg group-hover:text-primary-light dark:group-hover:text-blue-300 transition-colors">
+                            info@todopymes.com</p>
+                    </div>
+                </a>
+                <a class="flex items-center gap-5 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:border-[#25D366]/30 hover:-translate-y-1 transition-all duration-300 group"
+                    href="https://wa.me/59899334764" target="_blank">
+                    <div
+                        class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l121.7-31.9c32.4 17.7 68.9 27 106.5 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium mb-1">Chatea</p>
+                        <p
+                            class="text-primary dark:text-white font-bold tracking-tight text-lg group-hover:text-[#25D366] transition-colors">
+                            WhatsApp</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+        <footer class="w-full relative bg-footer-bg text-white pt-20 pb-10 overflow-hidden mt-auto">
+        <div class="absolute inset-0 footer-lines opacity-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+                <div class="flex flex-col space-y-6">
+                    <div class="flex items-center">
+                        <div class="relative group">
+                            <img 
+                                src="img/logo-white.png" 
+                                alt="Logo TodoPymes" 
+                                class="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                            >
+                            <div class="absolute inset-0 bg-white/5 blur-xl rounded-full -z-10"></div>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed max-w-xs">
+                        Automatizando las Empresas de Latinoamérica con tecnología, recursos y alianzas estratégicas para
+                        un crecimiento sostenible.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="#">
+                            <i class="material-symbols-outlined text-[20px]">feed</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="#">
+                            <i class="material-symbols-outlined text-[20px]">photo_camera</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="#">
+                            <i class="material-symbols-outlined text-[20px]">group</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="#">
+                            <span class="font-bold text-sm">X</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Plataforma</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Automatiza</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Soluciones</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Recursos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Recursos</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Alianzas Marketing</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Gestión Contable</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Academia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Soporte</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Centro de Ayuda</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Contacto</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="#">Agendar Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">© 2024 TodoPymes Inc. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Privacidad</a>
+                    <a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Términos y
+                        Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="fixed bottom-6 right-6 z-50 md:hidden">
+        <a class="relative group flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full text-white shadow-xl shadow-green-900/20 hover:scale-110 transition-transform duration-300"
+            href="https://wa.me/59899334764" target="_blank">
+            <div
+                class="absolute inset-0 rounded-full animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite] bg-[#25D366] opacity-30">
+            </div>
+            <svg class="w-8 h-8 fill-current relative z-10" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l121.7-31.9c32.4 17.7 68.9 27 106.5 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+</body>
+
+</html>
