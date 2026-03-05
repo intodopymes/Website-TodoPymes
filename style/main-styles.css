@@ -68,3 +68,96 @@ body { min-height: max(884px, 100dvh); }
 .animate-float-2 { animation: float-center 5s ease-in-out infinite reverse; }
 .animate-float-slow { animation: float-center 6s ease-in-out infinite; }
 .pulse-ring { animation: ripple 2s linear infinite; }
+
+
+/* Efectos de hover para botones y enlaces de INICIO */
+
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 4s ease-in-out infinite;
+}
+
+/* Efecto suave de entrada para el texto */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* --- Keyframes Unificados --- */
+
+/* Flotación suave */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Entrada desde abajo (Consolidada) */
+@keyframes fadeInUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* Entrada desde la izquierda */
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Rotación continua */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Efecto de brillo */
+@keyframes shine {
+    100% { left: 125%; }
+}
+
+/* --- Clases de Animación --- */
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-spin-slow {
+    animation: spin 12s linear infinite;
+}
+
+.animate-on-scroll-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.animate-shine {
+    animation: shine 0.8s forwards;
+}
+
+/* --- Animaciones Escalonadas (Stagger) --- 
+   Se usa 'both' para mantener el estado inicial oculto antes de empezar 
+*/
+.animate-stagger-1 { animation: fadeInUp 0.5s ease-out 0.10s both; }
+.animate-stagger-2 { animation: fadeInUp 0.5s ease-out 0.15s both; }
+.animate-stagger-3 { animation: fadeInUp 0.5s ease-out 0.20s both; }
+.animate-stagger-4 { animation: fadeInUp 0.5s ease-out 0.25s both; }
+.animate-stagger-5 { animation: fadeInUp 0.5s ease-out 0.30s both; }
+.animate-stagger-6 { animation: fadeInUp 0.5s ease-out 0.35s both; }
+.animate-stagger-7 { animation: fadeInUp 0.5s ease-out 0.40s both; }
+.animate-stagger-8 { animation: fadeInUp 0.5s ease-out 0.45s both; }
