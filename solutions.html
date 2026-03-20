@@ -117,10 +117,35 @@
                     <span><strong>Sales Funnels:</strong> Convierte visitas en clientes</span>
                 </li>
             </ul>
-            <button class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
+
+            <button 
+                onclick="toggleModal('modal-essential', true)"
+                class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
                 Get Essential
             </button>
         </div>
+        <div id="modal-essential" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="toggleModal('modal-essential', false)"></div>
+            
+            <div class="bg-white rounded-[20px] shadow-2xl relative w-full max-w-xl overflow-hidden z-10">
+                <button onclick="toggleModal('modal-essential', false)" class="absolute top-4 right-4 z-50 text-primary/50 hover:text-primary bg-white/80 rounded-full p-1 shadow-sm">
+                    <span class="material-icons-round">close</span>
+                </button>
+
+                <div class="w-full h-[550px] overflow-y-auto bg-white">
+                    <iframe
+                        src="https://ap.todopymes.uy/widget/form/Ckont1VeZai8tY45Td6T"
+                        style="display:block; width:100%; height:100%; border:none; border-radius:20px"
+                        id="popup-Ckont1VeZai8tY45Td6T" 
+                        data-layout="{'id':'INLINE'}"
+                        data-trigger-type="alwaysShow"
+                        data-form-id="Ckont1VeZai8tY45Td6T"
+                        title="Plan Essential">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
 
         <div class="bg-white rounded-[30px] p-8 shadow-glow-active border-2 border-primary relative flex flex-col transform md:scale-105 z-10">
             <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-lg uppercase tracking-wider">
@@ -137,7 +162,7 @@
                     <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
                 </div>
                 <div class="price-yearly flex flex-col mb-8 hidden animate-fade-in-up">
-                     <span class="text-base text-primary/40 line-through font-bold mb-2">$3,000</span>
+                    <span class="text-base text-primary/40 line-through font-bold mb-2">$3,000</span>
                     <div class="flex items-end gap-1">
                         <span class="text-5xl font-bold text-primary">$2,400</span>
                         <span class="text-base text-primary/50 mb-1.5 font-medium">/año</span>
@@ -163,10 +188,36 @@
                     <span><strong>Advanced Marketing:</strong> Email & Workflows Pro</span>
                 </li>
             </ul>
-            <button class="w-full py-4 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-primary-light transition-all active:scale-95">
+            
+            <button 
+                onclick="toggleModal('modal-professional', true)"
+                class="w-full py-4 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-primary-light transition-all active:scale-95">
                 Go Professional
             </button>
         </div>
+        <div id="modal-professional" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="toggleModal('modal-professional', false)"></div>
+            
+            <div class="bg-white rounded-[20px] shadow-2xl relative w-full max-w-xl overflow-hidden z-10">
+                <button onclick="toggleModal('modal-professional', false)" class="absolute top-4 right-4 z-50 text-primary/50 hover:text-primary bg-white/80 rounded-full p-1 shadow-sm">
+                    <span class="material-icons-round">close</span>
+                </button>
+
+                <div class="w-full h-[550px] overflow-y-auto">
+                    <iframe
+                        src="https://ap.todopymes.uy/widget/form/k2Ibrq5eLarIUvXpNkB2"
+                        style="display:block; width:100%; height:100%; border:none; border-radius:20px"
+                        id="popup-k2Ibrq5eLarIUvXpNkB2" 
+                        data-layout="{'id':'INLINE'}"
+                        data-trigger-type="alwaysShow"
+                        data-form-id="k2Ibrq5eLarIUvXpNkB2"
+                        title="Formulario Website - Plan Profesional">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
 
         <div class="bg-white rounded-[30px] p-8 shadow-card border border-primary/5 flex flex-col relative hover:-translate-y-2 transition-transform duration-300">
             <div class="mb-6">
@@ -180,7 +231,7 @@
                     <span class="text-base text-primary/50 mb-1.5 font-medium">/mes</span>
                 </div>
                 <div class="price-yearly flex flex-col mb-8 hidden animate-fade-in-up">
-                     <span class="text-base text-primary/40 line-through font-bold mb-2">$5,400</span>
+                    <span class="text-base text-primary/40 line-through font-bold mb-2">$5,400</span>
                     <div class="flex items-end gap-1">
                         <span class="text-5xl font-bold text-primary">$4,320</span>
                         <span class="text-base text-primary/50 mb-1.5 font-medium">/año</span>
@@ -206,10 +257,36 @@
                     <span><strong>API Ecosystem:</strong> Integración externa total</span>
                 </li>
             </ul>
-            <button class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
+
+            <button 
+                onclick="toggleModal('modal-enterprise', true)"
+                class="w-full py-4 rounded-full border-2 border-primary/10 text-primary font-bold hover:bg-primary/5 transition-colors">
                 Contact Enterprise
             </button>
         </div>
+        <div id="modal-enterprise" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+            <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="toggleModal('modal-enterprise', false)"></div>
+            
+            <div class="bg-white rounded-[20px] shadow-2xl relative w-full max-w-xl overflow-hidden z-10">
+                <button onclick="toggleModal('modal-enterprise', false)" class="absolute top-4 right-4 z-50 text-primary/50 hover:text-primary bg-white/80 rounded-full p-1 shadow-sm">
+                    <span class="material-icons-round">close</span>
+                </button>
+
+                <div class="w-full h-[550px] overflow-y-auto bg-white">
+                    <iframe
+                        src="https://ap.todopymes.uy/widget/form/JDYF1xrRkXjdrwdHRHI5"
+                        style="display:block; width:100%; height:100%; border:none; border-radius:20px"
+                        id="popup-JDYF1xrRkXjdrwdHRHI5" 
+                        data-layout="{'id':'INLINE'}"
+                        data-trigger-type="alwaysShow"
+                        data-form-id="JDYF1xrRkXjdrwdHRHI5"
+                        title="Plan Enterprise">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 
@@ -442,12 +519,6 @@
             <span class="material-icons-round text-lg text-teal-400">share</span>
         </div>
     </div>
-    <div class="text-center mt-10">
-        <button
-            class="px-8 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-bold transition-all backdrop-blur-sm">
-            Ver las más de 50 integraciones
-        </button>
-    </div>
 </section>
         
 <section class="mt-20 pb-32 px-6 max-w-4xl mx-auto">
@@ -539,7 +610,7 @@
                     <h4 class="text-white font-bold text-lg mb-6">Plataforma</h4>
                     <ul class="space-y-4">
                         <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
-                                href="index.html">Automatiza</a></li>
+                                href="automations.html">Automatiza</a></li>
                         <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
                                 href="solutions.html">Soluciones</a></li>
                         <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
@@ -611,6 +682,24 @@
         });
     });
     </script>
+
+    <script src="https://ap.todopymes.uy/js/form_embed.js"></script>
+    <script>
+        function toggleModal(modalId, show) {
+            const modal = document.getElementById(modalId);
+            if (show) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            } else {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+
+
 
 </body>
 
