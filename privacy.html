@@ -25,33 +25,44 @@
     </div>
     <header class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-3 group">
-                <div class="h-20 w-auto flex items-center justify-center">
-                    <img src="img/logo-todopymes.png" alt="TodoPymes Logo" class="h-full w-auto object-contain">
-                </div>
+            <a href="index.html" class="flex items-center">
+                <img src="img/logo-todopymes.png" alt="TodoPymes" class="h-20 w-auto object-contain">
             </a>
 
             <nav class="hidden md:flex items-center gap-8">
-                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
-                    href="index.html">Inicio</a>
-                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
-                    href="automations.html">Automatiza</a>
-                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
-                    href="solutions.html">Soluciones</a>
-                <a class="text-sm font-medium hover:text-primary/70 dark:hover:text-white/70 transition-colors"
-                    href="resources.html">Recursos</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="index.html">Inicio</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="automations.html">Automatiza</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="solutions.html">Soluciones</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="resources.html">Recursos</a>
             </nav>
 
             <div class="flex items-center gap-4">
-                <button class="md:hidden p-2 rounded-full hover:bg-primary/5 dark:hover:bg-white/10 transition-colors">
-                    <span class="material-icons">menu</span>
-                </button>
-                
-                <a href="contact.html"
-                    class="hidden md:block px-6 py-2.5 bg-primary dark:bg-white text-white dark:text-primary text-sm font-bold rounded-full hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                <a href="contact.html" class="hidden md:block px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-full hover:bg-primary/90 transition-all">
                     Empezar Ahora
                 </a>
+                
+                <button id="menu-open" class="md:hidden p-2 text-primary focus:outline-none">
+                    <span class="material-icons-round text-3xl">menu</span>
+                </button>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 w-full h-screen bg-white z-[100] flex flex-col transition-all duration-500 ease-in-out translate-x-full opacity-0 invisible overflow-hidden">
+            
+            <div class="h-20 px-6 flex items-center justify-between border-b border-gray-100">
+                <img src="img/logo-todopymes.png" alt="Logo" class="h-20 w-auto">
+                <button id="menu-close" class="p-2 text-primary">
+                    <span class="material-icons-round text-4xl">close</span>
+                </button>
+            </div>
+
+            <nav class="flex flex-col w-full">
+                <a href="index.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Inicio</a>
+                <a href="automations.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Automatiza</a>
+                <a href="solutions.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Soluciones</a>
+                <a href="resources.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Recursos</a>
+                <a href="contact.html" class="px-8 py-6 text-base font-bold text-secondary active:bg-gray-50 transition-colors">Empezar Ahora</a>
+            </nav>
         </div>
     </header>
 
@@ -221,6 +232,8 @@
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW0Tld713u9-712UTCuWaY1SQkBpkCkLh4B_Y5QI8JLYi063klhfFZG2JynbGJ2779GtiqQxHtljTApkT3I2NGsm3LrSu-765qISQNpaD4l1-_oX6z9I18ioGc_W6_uCNs5BrwHbXkSlFBNDEDCrClBdofz33gM2UMhBBHkjqxMQD3PKEYLO4ybHgvnrWhOgSlYdDVsysscTJGHJyAxVK7XrzgNGsVt-jEK0vndT-6Tm7pEhi_7vOiJUfKiCPVYIgGDvDKUDcf_7s" />
     <img class="hidden" data-alt="Business analytics chart and laptop screen"
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-X3NG8MTbwvqV6UEUP-ITCdO-B36DBLFcDDL5LIZ29vI1H6Fdw0G3q5qAvakVl5N69cX4I0gxmO9fOcGe3icydlMeXRBbL-2SU720-A2vDYXfjBm-3lP1VPIAvX4t1fXnT-jvMvl5DBJNlLqE7Ii-neT0rqte2pQ3OZavs7zRAsGSML-gcF8uUlpJBDKmEQUKwqX7lxvZGMCtMRj4zQjP_4rt5C4n6afgFYNzidTjZP2Wzz7EOPzUdxqAggeFaF0kLRF4SCg9QlI" />
+
+    <script src="js/main.js"></script>
 
     </body>
 
