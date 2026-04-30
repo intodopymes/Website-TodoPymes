@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>TodoPymes - Programa de Referidos</title>
+
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="apple-touch-icon" href="img/icono.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="style/main-styles.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display transition-colors duration-300 antialiased min-h-screen relative overflow-x-hidden flex flex-col">
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute inset-0 bg-pattern opacity-60"></div>
+        <div
+            class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] transform translate-x-1/3 -translate-y-1/3">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] transform -translate-x-1/3 translate-y-1/3">
+        </div>
+    </div>
+
+    <header class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="img/logo-todopymes.png" alt="TodoPymes" class="h-20 w-auto object-contain">
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="index.html">Inicio</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="automations.html">Automatiza</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="solutions.html">Soluciones</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="resources.html">Recursos</a>
+                <a class="text-sm font-bold text-primary hover:text-primary/70 transition-colors" href="referals.html">Referidos</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html" class="hidden md:block px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-full hover:bg-primary/90 transition-all">
+                    Empezar Ahora
+                </a>
+
+                <button id="menu-open" class="md:hidden p-2 text-primary focus:outline-none">
+                    <span class="material-icons-round text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 w-full h-screen bg-white z-[100] flex flex-col transition-all duration-500 ease-in-out translate-x-full opacity-0 invisible overflow-hidden">
+
+            <div class="h-20 px-6 flex items-center justify-between border-b border-gray-100">
+                <img src="img/logo-todopymes.png" alt="Logo" class="h-20 w-auto">
+                <button id="menu-close" class="p-2 text-primary">
+                    <span class="material-icons-round text-4xl">close</span>
+                </button>
+            </div>
+
+            <nav class="flex flex-col w-full">
+                <a href="index.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Inicio</a>
+                <a href="automations.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Automatiza</a>
+                <a href="solutions.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Soluciones</a>
+                <a href="resources.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Recursos</a>
+                <a href="referals.html" class="px-8 py-6 text-base font-bold text-primary border-b border-gray-50 active:bg-gray-50 transition-colors">Referidos</a>
+                <a href="contact.html" class="px-8 py-6 text-base font-bold text-secondary active:bg-gray-50 transition-colors">Empezar Ahora</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="relative z-10 pt-32 pb-20 flex-grow max-w-7xl mx-auto w-full px-6 flex flex-col gap-20 lg:gap-28">
+
+        <section class="text-center max-w-4xl mx-auto space-y-8">
+            <span
+                class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:text-white text-sm font-bold tracking-wide uppercase">
+                Programa de Referidos
+            </span>
+            <h1
+                class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary dark:text-white leading-[1.1] tracking-tight">
+                Genera más de <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">USD $500 al mes</span>
+                refiriendo clientes a TodoPymes
+            </h1>
+            <p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+                Convierte tu red de contactos en una fuente de ingresos pasivos.
+                Tú nos presentas al cliente, nosotros cerramos la venta. Y mientras ese cliente
+                siga activo con nosotros, tú sigues cobrando, mes tras mes.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#registro" class="px-8 py-4 bg-primary text-white text-base font-bold rounded-full hover:bg-primary/90 shadow-lg shadow-primary/20 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                    Quiero ser Referidor
+                </a>
+                <a href="https://wa.me/59897085862?text=Hola%2C%20quiero%20unirme%20al%20programa%20de%20referidos%20de%20TodoPymes" target="_blank"
+                    class="px-8 py-4 bg-white dark:bg-slate-800 text-primary dark:text-white text-base font-bold rounded-full border border-slate-200 dark:border-slate-700 hover:border-[#25D366]/40 hover:text-[#25D366] transition-all flex items-center gap-2">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l121.7-31.9c32.4 17.7 68.9 27 106.5 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                    </svg>
+                    Hablar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+                    <span class="material-icons-round text-3xl">payments</span>
+                </div>
+                <h3 class="text-2xl font-extrabold text-primary dark:text-white mb-2">+USD $500/mes</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Ese es el rango promedio que están alcanzando nuestros referidores activos. El techo
+                    lo pones tú: cuanto más refieras, más cobras.
+                </p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+                    <span class="material-icons-round text-3xl">all_inclusive</span>
+                </div>
+                <h3 class="text-2xl font-extrabold text-primary dark:text-white mb-2">Ingreso Pasivo</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Cobras todos los meses mientras el cliente siga activo con TodoPymes. Refiéres una vez,
+                    cobras durante años.
+                </p>
+            </div>
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-5">
+                    <span class="material-icons-round text-3xl">handshake</span>
+                </div>
+                <h3 class="text-2xl font-extrabold text-primary dark:text-white mb-2">Tú Refieres, Nosotros Cerramos</h3>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                    No tienes que vender, ni hacer demos, ni negociar. Tu único trabajo es presentarnos
+                    al contacto. Del resto nos encargamos nosotros.
+                </p>
+            </div>
+        </section>
+
+        <section class="space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span
+                    class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:text-white text-sm font-bold tracking-wide uppercase">
+                    Cómo Funciona
+                </span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary dark:text-white leading-tight tracking-tight">
+                    De tu primer contacto al primer pago en <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">4 pasos</span>
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    Un proceso pensado para que ganes dinero sin convertirte en vendedor.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+                <div class="relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group">
+                    <div class="absolute -top-4 -left-2 w-12 h-12 rounded-full bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                        01
+                    </div>
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="material-icons-round text-primary text-3xl">forum</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white">Contáctanos</h3>
+                        </div>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Llena el formulario en esta página o escríbenos por WhatsApp. Te haremos
+                            unas preguntas rápidas para conocerte y validar que el programa sea para ti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group">
+                    <div class="absolute -top-4 -left-2 w-12 h-12 rounded-full bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                        02
+                    </div>
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="material-icons-round text-primary text-3xl">link</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white">Recibes tu Link y tu Kit</h3>
+                        </div>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Te entregamos tu link único de referido más toda la documentación: cómo
+                            presentar TodoPymes, qué decir, qué materiales compartir y cómo identificar
+                            al cliente ideal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group">
+                    <div class="absolute -top-4 -left-2 w-12 h-12 rounded-full bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                        03
+                    </div>
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="material-icons-round text-primary text-3xl">share</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white">Refiéres Clientes Potenciales</h3>
+                        </div>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Comparte tu link o pásanos el contacto de empresas que necesiten automatizar
+                            sus procesos. Nosotros los contactamos, les hacemos la demo y cerramos la venta
+                            por ti.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-sm border border-primary/30 dark:border-primary/40 hover:shadow-xl transition-all duration-300 group ring-2 ring-primary/10">
+                    <div class="absolute -top-4 -left-2 w-12 h-12 rounded-full bg-primary text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-primary/30">
+                        04
+                    </div>
+                    <div class="pt-4 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="material-icons-round text-primary text-3xl animate-pulse-slow">savings</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white">Cobras Cada Mes</h3>
+                        </div>
+                        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Cuando el cliente se activa, tú empiezas a cobrar tu comisión recurrente.
+                            Mientras ese cliente siga con nosotros, tú sigues recibiendo tu pago. Mes
+                            tras mes, sin tocar nada más.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-br from-primary to-blue-600 dark:from-primary/90 dark:to-blue-800 rounded-3xl p-10 lg:p-16 text-white shadow-2xl shadow-primary/20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/3"></div>
+            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-white/20 text-white text-sm font-bold tracking-wide uppercase">
+                        Para quién es
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight">
+                        Si conoces empresas, este programa es para ti
+                    </h2>
+                    <p class="text-blue-100 text-lg leading-relaxed">
+                        No necesitas experiencia en ventas ni conocimientos técnicos. Solo necesitas
+                        una red de contactos y ganas de generar ingresos extra de forma inteligente.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 bg-white/10 backdrop-blur rounded-xl p-4">
+                        <span class="material-icons-round text-white/90 mt-1">check_circle</span>
+                        <p class="font-medium">Consultores, contadores y agencias con cartera de PYMEs</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white/10 backdrop-blur rounded-xl p-4">
+                        <span class="material-icons-round text-white/90 mt-1">check_circle</span>
+                        <p class="font-medium">Emprendedores con red activa de dueños de negocio</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white/10 backdrop-blur rounded-xl p-4">
+                        <span class="material-icons-round text-white/90 mt-1">check_circle</span>
+                        <p class="font-medium">Profesionales de marketing, ventas o tecnología</p>
+                    </div>
+                    <div class="flex items-start gap-4 bg-white/10 backdrop-blur rounded-xl p-4">
+                        <span class="material-icons-round text-white/90 mt-1">check_circle</span>
+                        <p class="font-medium">Cualquier persona con contactos en el mundo empresarial</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registro" class="flex flex-col lg:flex-row gap-12 items-start scroll-mt-32">
+            <div class="w-full lg:w-[45%] space-y-10 lg:sticky lg:top-32">
+                <div class="space-y-6">
+                    <span
+                        class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary dark:text-white text-sm font-bold tracking-wide uppercase">
+                        Registro
+                    </span>
+                    <h2
+                        class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary dark:text-white leading-[1.1] tracking-tight">
+                        Da el primer paso hacia tu <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">ingreso recurrente</span>
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-lg">
+                        Completa el formulario y nuestro equipo se pondrá en contacto contigo en menos
+                        de 24 horas para activar tu cuenta de referidor.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 space-y-4">
+                    <h3 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+                        <span class="material-icons-round text-primary">verified</span>
+                        Lo que recibes al unirte
+                    </h3>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-primary text-base mt-0.5">check</span>
+                            <span>Tu link único de referido con tracking automático</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-primary text-base mt-0.5">check</span>
+                            <span>Kit completo de ventas: presentaciones, scripts y casos de éxito</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-primary text-base mt-0.5">check</span>
+                            <span>Capacitación inicial para entender qué vende TodoPymes y cómo presentarlo</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-primary text-base mt-0.5">check</span>
+                            <span>Soporte directo de nuestro equipo comercial para cerrar tus referidos</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-icons-round text-primary text-base mt-0.5">check</span>
+                            <span>Pagos mensuales automáticos mientras tus referidos sigan activos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="w-full lg:w-[55%] relative">
+                <div class="absolute -inset-4 bg-gradient-to-br from-primary/10 to-transparent rounded-[3rem] blur-2xl -z-10">
+                </div>
+
+                <div class="bg-white dark:bg-slate-800 rounded-[2rem] shadow-2xl border border-slate-100 dark:border-slate-700 p-2 min-h-[600px] lg:min-h-[750px] flex flex-col transform transition-all hover:shadow-[0_20px_60px_-15px_rgba(0,52,88,0.15)]">
+
+                    <div class="px-6 py-4 border-b border-slate-100 dark:border-slate-700 flex items-center gap-2 bg-slate-50/50 dark:bg-slate-900/30 rounded-t-[1.8rem]">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <div class="mx-auto bg-white dark:bg-slate-800 px-4 py-1 rounded-md shadow-sm border border-slate-100 dark:border-slate-700 w-1/2 flex items-center justify-center gap-2 opacity-80">
+                            <span class="material-icons-round text-xs text-slate-400">lock</span>
+                            <span class="text-xs font-mono text-slate-400 truncate">secure.todopymes.com/referidos</span>
+                        </div>
+                    </div>
+
+<div class="flex-1 rounded-b-[1.8rem] bg-white dark:bg-slate-900/50 m-0 border-t-0 overflow-hidden relative flex items-center justify-center p-8">
+    <!-- IFRAME DEL FORMULARIO DE REFERIDOS -->
+    <iframe
+        src="https://a.todopymes.uy/widget/form/ZmnaJXWsfoSCUxMutT0C"
+        style="width:100%; height:100%; min-height:680px; border:none; border-radius:20px;"
+        id="inline-ZmnaJXWsfoSCUxMutT0C" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Formulario - Website - Referidos"
+        data-height="680"
+        data-layout-iframe-id="inline-ZmnaJXWsfoSCUxMutT0C"
+        data-form-id="ZmnaJXWsfoSCUxMutT0C"
+        title="Formulario - Website - Referidos"
+    >
+    </iframe>
+    <script src="https://a.todopymes.uy/js/form_embed.js"></script>
+    <!-- FIN IFRAME -->
+</div>
+                </div>
+            </section>
+        </section>
+
+        <section class="border-t border-slate-200 dark:border-slate-700/50 pt-10 pb-6">
+            <h4 class="text-sm uppercase tracking-wider font-bold text-slate-400 mb-8 px-2">¿Prefieres hablar primero? Escríbenos</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a class="flex items-center gap-5 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 group"
+                    href="tel:+17865743707">
+                    <div
+                        class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-icons-round text-2xl">phone</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium mb-1">Llámanos</p>
+                        <p
+                            class="text-primary dark:text-white font-bold tracking-tight text-lg group-hover:text-primary-light dark:group-hover:text-blue-300 transition-colors">
+                            +17865743707</p>
+                    </div>
+                </a>
+                <a class="flex items-center gap-5 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 group"
+                    href="mailto:ventas@todopymes.uy?subject=Programa%20de%20Referidos">
+                    <div
+                        class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <span class="material-icons-round text-2xl">mail</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium mb-1">Escríbenos</p>
+                        <p
+                            class="text-primary dark:text-white font-bold tracking-tight text-lg group-hover:text-primary-light dark:group-hover:text-blue-300 transition-colors">
+                            ventas@todopymes.uy</p>
+                    </div>
+                </a>
+                <a class="flex items-center gap-5 p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:border-[#25D366]/30 hover:-translate-y-1 transition-all duration-300 group"
+                    href="https://wa.me/59897085862?text=Hola%2C%20quiero%20unirme%20al%20programa%20de%20referidos%20de%20TodoPymes" target="_blank">
+                    <div
+                        class="w-14 h-14 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l121.7-31.9c32.4 17.7 68.9 27 106.5 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm text-slate-500 font-medium mb-1">Chatea</p>
+                        <p
+                            class="text-primary dark:text-white font-bold tracking-tight text-lg group-hover:text-[#25D366] transition-colors">
+                            WhatsApp</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="w-full relative bg-footer-bg text-white pt-20 pb-10 overflow-hidden mt-auto">
+        <div class="absolute inset-0 footer-lines opacity-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+                <div class="flex flex-col space-y-6">
+                    <div class="flex items-center">
+                        <div class="relative group">
+                            <img
+                                src="img/logo-white.png"
+                                alt="Logo TodoPymes"
+                                class="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                            >
+                            <div class="absolute inset-0 bg-white/5 blur-xl rounded-full -z-10"></div>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed max-w-xs">
+                        Automatizando las Empresas de Latinoamérica con tecnología, recursos y alianzas estratégicas para
+                        un crecimiento sostenible.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="https://www.instagram.com/pymesuy/reels/">
+                            <i class="material-symbols-outlined text-[20px]">photo_camera</i>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-footer-bg transition-all duration-300 group"
+                            href="https://www.facebook.com/TodoPymesUY/">
+                            <i class="material-symbols-outlined text-[20px]">group</i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Plataforma</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="automations.html">Automatiza</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="solutions.html">Soluciones</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Recursos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Recursos</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Alianzas Marketing</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Gestión Contable</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="resources.html">Academia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-6">Soporte</h4>
+                    <ul class="space-y-4">
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="contact.html">Contacto</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="contact.html">Agendar Demo</a></li>
+                        <li><a class="text-slate-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                href="referals.html">Programa de Referidos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">© 2026 TodoPymes Inc. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-400 hover:text-white text-sm transition-colors" href="privacy.html">Privacidad</a>
+                    <a class="text-slate-400 hover:text-white text-sm transition-colors" href="terms.html">Términos y
+                        Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="fixed bottom-6 right-6 z-50 md:hidden">
+        <a class="relative group flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full text-white shadow-xl shadow-green-900/20 hover:scale-110 transition-transform duration-300"
+            href="https://wa.me/59897085862?text=Hola%2C%20quiero%20unirme%20al%20programa%20de%20referidos%20de%20TodoPymes" target="_blank">
+            <div
+                class="absolute inset-0 rounded-full animate-[ping_2s_cubic-bezier(0,0,0.2,1)_infinite] bg-[#25D366] opacity-30">
+            </div>
+            <svg class="w-8 h-8 fill-current relative z-10" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l121.7-31.9c32.4 17.7 68.9 27 106.5 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
